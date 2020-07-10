@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#031578">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imageView"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Name"
+        android:textSize="25sp"
+        android:textColor="#9EE6EF"/>
+    <TextView
+        android:id="@+id/tvdisplay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attack:"
+        android:layout_alignTop="@id/tvName"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textColor="#E4FBF9"
+        android:fontFamily="@font/coda"
+        />
+
+    <TextView
+        android:id="@+id/tvAttack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tvName"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/coda"
+        android:text="TextView"
+        android:textColor="#E4FBF9"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvdisplay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Defense:"
+        android:layout_alignTop="@id/tvdisplay1"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textColor="#E4FBF9"
+        android:fontFamily="@font/coda"
+        />
+    <TextView
+        android:id="@+id/tvDefense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignTop="@id/tvAttack"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textColor="#E4FBF9"
+        android:fontFamily="@font/coda"
+        />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#4AE8DB"
+        android:layout_marginTop="145dp"
+        android:minHeight="5dp"/>
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="380dp"
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/ic_baseline_delete_forever_24" />
+</RelativeLayout>
